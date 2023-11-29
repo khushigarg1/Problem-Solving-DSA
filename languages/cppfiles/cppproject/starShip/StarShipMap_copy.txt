@@ -1,0 +1,15 @@
+NCC1701				Constitution	Enterprise		430			289				6
+NCC1764				Constitution	Defiant			430			289				6
+NCC14232			Excelsior		Berlin			680			467				8
+NCC1701D			Galaxy			Enterprise		1014		642				9.2
+NCC74600			Intrepid		Voyager			141			344				9.975
+NCC74705			Intrepid		Bellerophon		141			344				9.975
+NCC74210			Defiant			Valiant			47			120				9
+NCC71805			Nebula			Endeavour		520			440				9.5
+NCC60597			Nebula			Farragut		520			465				9.5
+NCC60597			Nebula			Farragut		520			465				9.5
+NCC71805			Nebula			Endeavour		520			440				9.5
+NCC74600			Intrepid		Voyager			141			344				9.975
+NCC1701E			Sovereign		Enterprise		1100		685				9.5
+NCC1701E			Sovereign		Enterprise		1100		685				9.5
+NCC1701E			Sovereign		Enterprise		1100		685				9.5
