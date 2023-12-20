@@ -43,43 +43,48 @@ int main()
     int target;
     cin >> target;
 
-    // vector<vector<int>> dp(n, vector<int>(target + 1, -1));
-    // int ans = find_mincoin(n - 1, v, target, dp);
+    vector<vector<int>> dp(n, vector<int>(target + 1, -1));
+    int ans = find_mincoin(n - 1, v, target, dp);
     // cout << ans;
 
-    vector<vector<int>> dp(n, vector<int>(target + 1, 0));
-    for (int i = 0; i <= target; i++)
+    // vector<vector<int>> dp(n, vector<int>(target + 1, 0));
+    // for (int i = 0; i <= target; i++)
+    // {
+    //     if (i % v[0] == 0)
+    //     {
+    //         dp[0][i] = i / v[0];
+    //     }
+    //     else
+    //     {
+    //         dp[0][i] = 1e9;
+    //     }
+    // }
+    // for (int i = 1; i < n; i++)
+    // {
+    //     for (int j = 0; j <= target; j++)
+    //     {
+    //         int nontake = dp[i - 1][j];
+    //         int take = INT_MAX;
+    //         if (j >= v[i])
+    //         {
+    //             take = 1 + dp[i][j - v[i]];
+    //         }
+    //         dp[i][j] = min(nontake, take);
+    //     }
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j <= target; j++)
+    //     {
+    //         cout << dp[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+    if (ans == INT_MAX)
     {
-        if (i % v[0] == 0)
-        {
-            dp[0][i] = i / v[0];
-        }
-        else
-        {
-            dp[0][i] = 1e9;
-        }
+        cout << -1;
     }
-    for (int i = 1; i < n; i++)
-    {
-        for (int j = 0; j <= target; j++)
-        {
-            int nontake = dp[i - 1][j];
-            int take = INT_MAX;
-            if (j >= v[i])
-            {
-                take = 1 + dp[i][j - v[i]];
-            }
-            dp[i][j] = min(nontake, take);
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j <= target; j++)
-        {
-            cout << dp[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << dp[n - 1][target];
+    else
+        cout << dp[n - 1][target];
     return 0;
 }

@@ -89,8 +89,8 @@ vector<int> BFS(int vertex, vector<pair<int, int>> edges)
 void dfs(int node, unordered_map<int, bool> &visited, unordered_map<int, list<int>> &adj, vector<int> &compo)
 {
     compo.push_back(node);   // storing answer
-    visited[node] = true;    // makring visited
-    for (auto i : adj[node]) // recursive call fro every connected node
+    visited[node] = true;    // making visited
+    for (auto i : adj[node]) // recursive call for every connected node
     {
         if (!visited[i])
         {
