@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transparent Image</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+      }
+      .image-container img {
+        width: auto; /* Maintains original resolution */
+        max-width: 100%; /* Adjusts to screen size */
+        height: auto; /* Preserves aspect ratio */
+        opacity: 0.7; /* Adjust transparency */
+        image-rendering: crisp-edges; /* Improves sharpness */
+        image-rendering: -webkit-optimize-contrast; /* Enhances quality in WebKit browsers */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="./IMG_20250215_104845_104.webp" alt="Transparent Image" />
+    </div>
+  </body>
+</html>
